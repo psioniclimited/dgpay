@@ -163,10 +163,12 @@ p, span, div {
 }
 .digipay-old-info-collection-card-paragraph {
     position: relative;
-    font-size: 11px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 27px;
     text-align: center;
     padding-right: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .digipay-old-info-collection-card-li {
     position: relative;
@@ -500,6 +502,14 @@ footer {
 }
 .digipay-old-info-collection-content-col05 {
     margin: auto;
+}
+.digipay-old-info-collection-card-ul {
+    position: relative;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
 }
 @media (min-width: 1921px){
     #primary-menu {
