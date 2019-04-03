@@ -30,6 +30,9 @@ p, span, div {
     color: #FFF;
     text-shadow: none;
 }
+#gotoTop:hover {
+    background-color: #1d8ccd !important;
+}
 #header.dark.sticky-header.transparent-header #header-wrap:not(.not-dark) {
     background: #1d8ccd;
 }
@@ -416,7 +419,7 @@ p, span, div {
     font-size: 16px;
     text-align: justify;
     line-height: 32px;
-    margin-left: calc(100% - 90%);
+    margin-left: calc(100% - 87%);
 }
 
 #digipay-old-info-collection-section {
