@@ -1,0 +1,893 @@
+@font-face {
+    font-family: 'SolaimanLipi';
+    src: url('solaimanlipi-webfont.woff2') format('woff2'),
+    url('solaimanlipi-webfont.woff') format('woff'),
+    url('SolaimanLipi.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hind_Siliguri_Bold';
+    src: url('Hind_Siliguri_Bold.ttf') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Montserrat';
+}
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: 'Hind_Siliguri_Bold';
+}
+p, span, div {
+    font-family: 'SolaimanLipi';
+}
+::selection {
+    background: #1d8ccd !important;
+    color: #FFF;
+    text-shadow: none;
+}
+#header.dark.sticky-header.transparent-header #header-wrap:not(.not-dark) {
+    background: #1d8ccd;
+}
+.sticky-header #primary-menu {
+    margin-top: 0.5rem;
+}
+#header.sticky-header:not(.static-sticky),
+#header.sticky-header:not(.static-sticky) #header-wrap,
+#header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
+    height: 80px;
+}
+.one-page-menu li {
+    cursor: pointer;
+}
+
+#digipay-pricing-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 1;
+}
+.digipay-pricing-content-wrap {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+.digipay-pricing-content {
+    position: relative;
+    margin-bottom: 80px;
+}
+.digipay-pricing-header-bottom-line {
+    position: relative;
+    height: 5px;
+    width: 50px;
+    margin-top: 20px;
+    background: #ff8500;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+}
+.generic-header-bottom-line {
+    position: relative;
+    height: 5px;
+    width: 50px;
+    margin-top: 20px;
+    background: #ff8500;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+}
+.generic-header-bottom-line {
+    display: none;
+}
+.digipay-pricing-header-main img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-20%);
+    -webkit-transform: translateX(-20%);
+    -moz-transform: translateX(-20%);
+}
+.digipay-old-info-collection-card {
+    position: relative;
+    padding: 60px 20px 20px 20px;
+    width: 280px;
+    left: 50%;
+    border: 0.5px solid rgba(0,0,0, 0.05);
+    border-radius: 30px;
+    cursor: pointer;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #fff;
+}
+.digipay-old-info-collection-card-col04 {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+}
+.digipay-old-info-collection-card-col04:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 2;
+}
+.digipay-old-info-collection-card01 {
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+}
+.digipay-old-info-collection-card02 {
+    box-shadow: 0px 10px 40px rgba(255, 134, 0, .25);
+}
+.digipay-old-info-collection-card03 {
+    box-shadow: 0px 10px 40px rgba(0, 129, 190, 0.25);
+}
+.digipay-old-info-collection-card-header {
+    text-align: center;
+    font-size: 28px;
+}
+.digipay-old-info-collection-card-row {
+    position: relative;
+    width: calc(100% - 0%);
+}
+.digipay-old-info-collection-card-col04 {
+    /*padding-left: 0;*/
+}
+.digipay-old-info-collection-card-circle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 25px;
+    border-radius: 90%;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.digipay-old-info-collection-card-circle.circle01 {
+    background: #ccc;
+}
+.digipay-old-info-collection-card-circle.circle02 {
+    background: #ff8600;
+}
+.digipay-old-info-collection-card-circle.circle03 {
+    background: #0081be;
+}
+.digipay-old-info-collection-card-paragraph {
+    position: relative;
+    font-size: 11px;
+    line-height: 22px;
+    text-align: center;
+    padding-right: 5px;
+}
+.digipay-old-info-collection-card-li {
+    position: relative;
+    font-size: 12px;
+    line-height: 35px;
+    text-align: justify;
+    padding-right: 7px;
+}
+
+.digipay-old-info-collection-card-list-holder {
+    position: relative;
+    padding-left: 20px;
+}
+.digipay-old-info-collection-card-buy-btn-holder {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.digipay-old-info-collection-card-buy-btn-ptag {
+    position: relative;
+    padding: 15px 15px 10px 15px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    width: 175px;
+    border-radius: 15px;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.digipay-old-info-collection-card-buy-btn-ptag.buy-btn-ptag01 {
+    background: #ccc;
+}
+.digipay-old-info-collection-card-buy-btn-ptag.buy-btn-ptag02 {
+    background: #ff8600;
+}
+.digipay-old-info-collection-card-buy-btn-ptag.buy-btn-ptag03 {
+    background: #0081be;
+}
+
+#digipay-map-tracking-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 1;
+}
+.digipay-map-tracking-content-wrap {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+.digipay-map-tracking-col06 {
+    padding-left: 0;
+    padding-right: 0;
+    left: -62px;
+}
+.digipay-map-tracking-content{
+    background: rgba(255,255,255, 0.8);
+    position: relative;
+    height: 100%;
+    padding: 80px 85px 80px 77px;
+    z-index: 2;
+}
+.digiplay-map-location-marker {
+    position: relative;
+    width: 30px;
+}
+.location-marker-holder01 {
+    top: calc(100% - 100%);
+    left: calc(100% - -50%);
+    opacity: 0;
+    animation: show .3s forwards 2.1s;
+}
+.location-marker-holder02 {
+    top: calc(100% - 95%);
+    left: calc(100% - 5%);
+    opacity: 0;
+    animation: show .3s forwards 1.8s;
+}
+.location-marker-holder03 {
+    top: calc(100% - 89%);
+    left: calc(100% - -25%);
+    opacity: 0;
+    animation: show .3s forwards 1.5s;
+}
+.location-marker-holder04 {
+    top: calc(100% - 80%);
+    left: calc(100% - 15%);
+    opacity: 0;
+    animation: show .3s forwards 1.2s;
+}
+.location-marker-holder05 {
+    top: calc(100% - 100%);
+    left: calc(100% - 54%);
+    opacity: 0;
+    animation: show .3s forwards 0.9s;
+}
+.location-marker-holder06 {
+    top: calc(100% - 70%);
+    left: calc(100% - 65%);
+    opacity: 0;
+    animation: show .3s forwards 0.6s;
+}
+
+#digipay-report-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 1;
+}
+.digipay-report-content-wrap {
+    padding-top: 160px;
+    background: #fff;
+}
+.digipay-report-card-li {
+    position: relative;
+    width: fit-content;
+    margin-left: 18px;
+}
+.digipay-report-card-li {
+    position: relative;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 36px;
+}
+.digipay-report-img-col-12 {
+    height: 400px;
+}
+.digipay-report-img {
+    position: relative;
+    width: fit-content;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(267px, -40%);
+    -moz-transform: translate(267px, -40%);
+    transform: translate(267px, -40%);
+}
+
+#digipay-web-base-app-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 1;
+}
+.digipay-web-base-app-content-wrap {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+#digipay-complaint-tracking-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 1;
+}
+.digipay-complaint-tracking-content-wrap {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+#digipay-daily-and-monthly-expense-section {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+}
+.digipay-daily-and-monthly-expense-content-wrap {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+
+.header-container {
+    max-width: 1500px;
+}
+.digipay-web-base-app-row {
+    width: 100%;
+}
+.digipay-web-base-app-col05 {
+    margin: auto;
+}
+.digipay-web-base-app-content {
+    /*flex: 1;*/
+}
+.digipay-web-base-app-header-top-line {
+    position: relative;
+    height: 5px;
+    width: 70px;
+    margin-bottom: 20px;
+    background: #ff8500;
+}
+.digipay-web-base-app-header {
+    font-size: 36px;
+    font-weight: 600;
+    color: #0280bc;
+    margin-bottom: 20px;
+}
+.digipay-web-base-app-paragraph {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 32px;
+}
+.digipay-daily-and-monthly-expense-content {
+    position: relative;
+    height: 518px;
+    margin-top: 40px;
+    z-index: 20;
+    overflow: hidden;
+    background: url(../img/websites-daily-and-monthly-expense.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 70%) center;
+    background-size: contain;
+    animation: animatedBackground 1.2s forwards;
+}
+
+@-webkit-keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: calc(100% - 70%) center; }
+}
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: calc(100% - 70%) center; }
+}
+.digipay-daily-and-monthly-expense-content-row {
+    height: 100%;
+}
+.digipay-daily-and-monthly-expense-content-col06 {
+    margin: auto;
+}
+
+.digipay-daily-and-monthly-expense-content-text-paragraph {
+    position: relative;
+    width: 350px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 32px;
+    margin-left: calc(100% - 90%);
+}
+
+#digipay-old-info-collection-section {
+    position: relative;
+    background: #fff;
+}
+.digipay-old-info-collection-content-wrap {
+    /*background: #fff;*/
+}
+.digipay-old-info-collection-content-row {
+    margin-bottom: 80px;
+}
+footer {
+    position: relative;
+    background: #1d8ccd;
+    padding: 20px 0;
+}
+.digipay-footer-hotline-div {
+    position: relative;
+    width: fit-content;
+    background: #fff;
+    padding: 15px 25px 5px;
+    border-radius: 7px;
+}
+.digipay-footer-hotline-digit-div {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    /* padding: 15px 0px 5px; */
+}
+#palace-power-by, #power-by-company-name-in-footer {
+    font-size: 14px;
+    color: #fff;
+}
+#power-by-company-name-in-footer:hover {
+    color: #F0F0F0;
+}
+.digipay-footer-hotline-icons-div {
+    position: relative;
+}
+.digipay-footer-hotline-icons-div img {
+    position: relative;
+    width: 55px;
+    margin-right: 20px;
+}
+.digipay-footer-hotline-number {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1d8ccd;
+    text-align: center;
+    margin-bottom: 0;
+}
+.digipay-footer-hotline-digit{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+}
+@-webkit-keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+.digipay-web-base-app-header {
+    overflow: hidden;
+}
+.device-xs #header {
+    background-color: #1d8ccd !important;
+}
+.digipay-old-info-collection-content-col05 {
+    margin: auto;
+}
+@media (min-width: 1921px){
+    #primary-menu {
+        margin-right: -120px;
+    }
+    #logo {
+        margin-left: -120px;
+    }
+    .digipay-report-img {
+        position: relative;
+        width: fit-content;
+        top: 0;
+        left: 0;
+        -webkit-transform: translate(calc(100% - 50%), -25%);
+        -moz-transform: translate(calc(100% - 50%), -25%);
+        transform: translate(calc(100% - 50%), -25%);
+    }
+}
+
+@media (min-width: 1800px) and (max-width: 1920px) {
+    #primary-menu {
+        margin-right: -120px;
+    }
+    #logo {
+        margin-left: -120px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+    #primary-menu > ul > li > a > div > img{
+        height: 24px;
+    }
+    #digipay-pricing-section {
+        height: 100%;
+    }
+    .digipay-pricing-content-wrap {
+        padding-top: 160px;
+        padding-bottom: 160px;
+        top: 0%;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+    }
+    .location-marker-holder01 {
+        left: calc(100% - 10%);
+    }
+    .location-marker-holder02 {
+        left: calc(100% - 25%);
+    }
+    .location-marker-holder03 {
+        left: calc(100% - 3%);
+    }
+    .location-marker-holder04 {
+        left: calc(100% - 15%);
+    }
+    .location-marker-holder05 {
+        left: calc(100% - 54%);
+    }
+    .location-marker-holder06 {
+        left: calc(100% - 65%);
+    }
+    .digipay-report-img {
+        -webkit-transform: translate(0, -40%)  scale(0.8);
+        -moz-transform: translate(0, -40%) scale(0.8);
+        transform: translate(0, -40%) scale(0.8);
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    #primary-menu > ul > li > a > div > img{
+        height: 18px;
+    }
+    #primary-menu > ul {
+        float: left;
+        margin-top: 5px;
+    }
+
+    #digipay-pricing-section {
+        height: 100%;
+    }
+    .digipay-pricing-content-wrap {
+        padding-top: 160px;
+        padding-bottom: 160px;
+        top: 0%;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+    }
+    .location-marker-holder01 {
+        left: calc(100% - 10%);
+    }
+    .location-marker-holder02 {
+        left: calc(100% - 48%);
+    }
+    .location-marker-holder03 {
+        left: calc(100% - 26%);
+    }
+    .location-marker-holder04 {
+        left: calc(100% - 28%);
+    }
+    .location-marker-holder05 {
+        left: calc(100% - 77%);
+    }
+    .location-marker-holder06 {
+        left: calc(100% - 87%);
+    }
+    .digipay-report-img {
+        -webkit-transform: translate(0, -40%)  scale(0.8);
+        -moz-transform: translate(0, -40%) scale(0.8);
+        transform: translate(0, -40%) scale(0.8);
+    }
+    .digipay-daily-and-monthly-expense-content-text-paragraph {
+        width: 245px;
+        margin-left: calc(100% - 75%);
+    }
+    .digipay-map-tracking-col06 {
+        left: 0px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #header.dark.transparent-header, #header.dark.semi-transparent {
+        background-color: #1d8ccd !important;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    #header.transparent-header + #slider , .swiper_wrapper .swiper-slide {
+
+        height: 700px !important;
+    }
+    #digipay-report-section {
+        height: 100%;
+    }
+    .digiplay-map-location-marker {
+        width: 20px;
+        /*display: none;*/
+    }
+    .d-none {
+        display: inherit !important;
+    }
+    #primary-menu > ul > li > a > div > img{
+        height: 18px;
+    }
+    #primary-menu > ul {
+        float: left;
+        margin-top: 5px;
+    }
+
+    #digipay-pricing-section {
+        height: 100%;
+    }
+    .digipay-pricing-content-wrap {
+        padding-top: 160px;
+        padding-bottom: 160px;
+        top: 0%;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+    }
+    .location-marker-holder01 {
+        left: calc(100% - 10%);
+    }
+    .location-marker-holder02 {
+        left: calc(100% - 48%);
+    }
+    .location-marker-holder03 {
+        left: calc(100% - 26%);
+    }
+    .location-marker-holder04 {
+        left: calc(100% - 28%);
+    }
+    .location-marker-holder05 {
+        left: calc(100% - 77%);
+    }
+    .location-marker-holder06 {
+        left: calc(100% - 87%);
+    }
+    .digipay-report-img {
+        -webkit-transform: translate(0, -40%)  scale(1);
+        -moz-transform: translate(0, -40%) scale(1);
+        transform: translate(0, -40%) scale(1);
+    }
+    .digipay-daily-and-monthly-expense-content-text-paragraph {
+        width: 245px;
+        margin-left: calc(100% - 75%);
+    }
+    .digipay-map-tracking-col06 {
+        left: 0px;
+    }
+    .digipay-web-base-app-row {
+        width: fit-content;
+    }
+    .digipay-daily-and-monthly-expense-content {
+        background-size: 60%;
+    }
+    .digipay-map-tracking-content {
+        padding: 50px 30px 50px 30px;
+    }
+    .digipay-old-info-collection-card-col04 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 80px;
+    }
+}
+@media (max-width: 767px) {
+
+    #primary-menu > ul > li > a > div > img{
+        height: 20px;
+    }
+    .digipay-report-img {
+         -webkit-transform: none;
+        -moz-transform: none;
+         transform: none;
+    }
+    .digipay-old-info-collection-card-row {
+        position: relative;
+        width: fit-content;
+    }
+    .digipay-old-info-collection-card-col04 {
+         padding-left: 15px;
+        margin-bottom: 60px;
+    }
+    .digipay-old-info-collection-card {
+         width: 250px;
+    }
+    .digipay-old-info-collection-card-li {
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+    .digipay-web-base-app-row {
+        width: fit-content;
+    }
+    .digipay-pricing-content-wrap {
+        top: 0%;
+        transform: translateY(-0%);
+        -webkit-transform: translateY(-0%);
+        -moz-transform: translateY(-0%);
+    }
+    #digipay-pricing-section {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+    }
+    .digipay-web-base-app-header-top-line {
+        display: none;
+    }
+    .digipay-complaint-tracking-header img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-30%);
+        -webkit-transform: translateX(-30%);
+        -moz-transform: translateX(-30%);
+    }
+    .digipay-old-info-collection-header img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-44%);
+        -webkit-transform: translateX(-44%);
+        -moz-transform: translateX(-44%);
+    }
+    .generic-header-bottom-line {
+        display: inherit;
+        margin-bottom: 40px;
+    }
+
+    #palace-power-by, #power-by-company-name-in-footer {
+        font-size: 12px;
+    }
+    .digipay-daily-and-monthly-expense-content {
+        position: relative;
+        height: auto;
+        margin-top: 40px;
+        z-index: 20;
+        overflow: hidden;
+        background: none;
+        animation: animatedBackground 1.2s forwards;
+    }
+    .digipay-daily-and-monthly-expense-content-col06 {
+        margin-bottom: 40px;
+    }
+    .digipay-daily-and-monthly-expense-mobile-img {
+        display: inherit !important;
+    }
+    .digipay-daily-and-monthly-expense-content-text-paragraph {
+        width: 100%;
+        margin-left: 0;
+    }
+    #digipay-daily-and-monthly-expense-section {
+        height: auto;
+    }
+    .digipay-daily-and-monthly-expense-content-wrap {
+        top: 0;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        padding-bottom: 0px;
+    }
+    .digipay-old-info-collection-content-wrap {
+        padding-bottom: 0;
+    }
+    .digipay-daily-and-monthly-expense-header img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+    }
+    .digipay-web-base-app-content-wrap {
+        /*padding-top: 0;*/
+    }
+    .digipay-web-base-app-header-main img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-30%);
+        -webkit-transform: translateX(-30%);
+        -moz-transform: translateX(-30%);
+    }
+    #digipay-report-section {
+        height: 100%;
+    }
+    .digipay-report-content-wrap {
+        padding-top: 80px;
+        /*padding-bottom: 0;*/
+    }
+    .digipay-report-img-col-12 {
+        height: 100%;
+    }
+    .digipay-report-header img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-13%);
+        -webkit-transform: translateX(-13%);
+        -moz-transform: translateX(-13%);
+    }
+    .digipay-report-card-ul {
+        display: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-11%);
+        -webkit-transform: translateX(-11%);
+        -moz-transform: translateX(-11%);
+    }
+    .digipay-report-card-div {
+        display: inherit !important;
+        position: relative;
+        width: 100%;
+    }
+    .digipay-report-card-div p {
+        font-size: 16px;
+        text-align: center;
+        line-height: 32px;
+    }
+    #digipay-map-tracking-section {
+        overflow: hidden;
+        height: 100%;
+    }
+    .digipay-map-tracking-content-wrap {
+        background: rgba(255,255,255, 0.8);
+        top: 0;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+    }
+
+    .digipay-map-tracking-col06 {
+        padding-left: 0;
+        padding-right: 0;
+        left: 0;
+    }
+    .digipay-map-tracking-content {
+        background: transparent;
+        padding: 0 15px;
+
+    }
+    .digiplay-map-location-marker {
+        width: 20px;
+        display: none;
+    }
+    .digipay-map-tracking-header img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-21%);
+        -webkit-transform: translateX(-21%);
+        -moz-transform: translateX(-21%);
+    }
+    .swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
+        height: 45vh !important;
+    }
+    .d-none {
+         display: inherit !important;
+    }
+}
