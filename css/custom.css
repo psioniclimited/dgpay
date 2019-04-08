@@ -6,18 +6,24 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Hind_Siliguri_Bold';
-    src: url('Hind_Siliguri_Bold.ttf') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
+/*@font-face {*/
+    /*font-family: 'Hind_Siliguri_Bold';*/
+    /*src: url('Hind_Siliguri_Bold.ttf') format('woff2');*/
+    /*font-weight: bold;*/
+    /*font-style: normal;*/
+/*}*/
 
 html {
     font-size: 62.5%;
 }
 body {
     font-family: 'Montserrat';
+}
+body:not(.no-transition) #wrapper, .animsition-overlay {
+    position: relative;
+    opacity: 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 h1, h2, h3, h4, h5, h6, h7 {
     font-family: 'Hind_Siliguri_Bold';
@@ -47,7 +53,9 @@ p, span, div {
 .one-page-menu li {
     cursor: pointer;
 }
-
+.swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
+    height: 100vh !important;
+}
 #digipay-pricing-section {
     position: relative;
     width: 100%;
@@ -295,6 +303,7 @@ p, span, div {
 .digipay-report-card-li {
     position: relative;
     width: fit-content;
+    width: -moz-fit-content;
     margin-left: 18px;
 }
 .digipay-report-card-li {
@@ -309,6 +318,7 @@ p, span, div {
 .digipay-report-img {
     position: relative;
     width: fit-content;
+    width: -moz-fit-content;
     top: 0;
     left: 0;
     -webkit-transform: translate(267px, -40%);
@@ -440,6 +450,7 @@ footer {
 .digipay-footer-hotline-div {
     position: relative;
     width: fit-content;
+    width: -moz-fit-content;
     background: #fff;
     padding: 15px 25px 5px;
     border-radius: 7px;
@@ -509,10 +520,34 @@ footer {
 .digipay-old-info-collection-card-ul {
     position: relative;
     width: fit-content;
+    width: -moz-fit-content;
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
+}
+.digipay-welcomeslider-row {
+    position: relative;
+    top: 50%;
+    transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
+    -moz-transform: translateY(-60%);
+}
+.digipay-welcomeslider-col05 {
+    margin: 0;
+}
+.welcome-slider-dgplay-btn {
+    position: relative;
+    width: 50%;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    border: 1px solid #fff;
+   font-family: 'SolaimanLipi';
+    color: #fff;
+    border-radius: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
 }
 @media (min-width: 1921px){
     #primary-menu {
@@ -524,6 +559,7 @@ footer {
     .digipay-report-img {
         position: relative;
         width: fit-content;
+        width: -moz-fit-content;
         top: 0;
         left: 0;
         -webkit-transform: translate(calc(100% - 50%), -25%);
@@ -630,7 +666,19 @@ footer {
     .digipay-map-tracking-col06 {
         left: 0px;
     }
-
+    .welcome-slider-dgplay-btn {
+        width: 70%;
+        font-size: 1.7rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .digipay-welcomeslider-row {
+        top: 50%;
+        left: 5%;
+        transform: translateY(-95%);
+        -webkit-transform: translateY(-95%);
+        -moz-transform: translateY(-95%);
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     #header.dark.transparent-header, #header.dark.semi-transparent {
@@ -702,6 +750,7 @@ footer {
     }
     .digipay-web-base-app-row {
         width: fit-content;
+        width: -moz-fit-content;
     }
     .digipay-daily-and-monthly-expense-content {
         background-size: 60%;
@@ -713,6 +762,41 @@ footer {
         flex: 0 0 100%;
         max-width: 100%;
         margin-bottom: 80px;
+    }
+
+    .slider-break {
+        display: none;
+    }
+    .welcome-slider-dgplay-bottom-line {
+        position: relative;
+        height: 5px;
+        width: 50px;
+        margin-top: 20px;
+        background: #ff8500;
+        left:0%;
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+    }
+    .welcome-slider-dgplay-btn {
+        width: 100%;
+        font-size: 1.7rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .digipay-welcomeslider-row {
+        top: 50%;
+        left: 5%;
+        transform: translateY(-95%);
+        -webkit-transform: translateY(-95%);
+        -moz-transform: translateY(-95%);
+    }
+    .swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
+        height: 700px !important;
+    }
+    .digipay-web-base-app-col05 {
+        flex: 0 0 50.666667%;
+        max-width: 50.666667%;
     }
 }
 @media (max-width: 767px) {
@@ -728,6 +812,7 @@ footer {
     .digipay-old-info-collection-card-row {
         position: relative;
         width: fit-content;
+        width: -moz-fit-content;
     }
     .digipay-old-info-collection-card-col04 {
          padding-left: 15px;
@@ -742,6 +827,8 @@ footer {
     }
     .digipay-web-base-app-row {
         width: fit-content;
+        width: -moz-fit-content;
+
     }
     .digipay-pricing-content-wrap {
         top: 0%;
@@ -898,9 +985,35 @@ footer {
         -moz-transform: translateX(-21%);
     }
     .swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
-        height: 45vh !important;
+        height: 100vh !important;
     }
     .d-none {
          display: inherit !important;
+    }
+    .slider-break {
+        display: none;
+    }
+    .welcome-slider-dgplay-bottom-line {
+        position: relative;
+        height: 5px;
+        width: 50px;
+        margin-top: 20px;
+        background: #ff8500;
+         left:0%;
+         transform: translateX(0%);
+         -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+    }
+    .welcome-slider-dgplay-btn {
+        width: 70%;
+        font-size: 1.7rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .digipay-welcomeslider-row {
+        top: 50%;
+        transform: translateY(-75%);
+        -webkit-transform: translateY(-75%);
+        -moz-transform: translateY(-75%);
     }
 }
