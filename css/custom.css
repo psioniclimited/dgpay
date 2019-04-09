@@ -203,7 +203,7 @@ p, span, div {
     transform: translateX(-50%);
 }
 .digipay-old-info-collection-card-buy-btn-ptag.buy-btn-ptag01 {
-    background: #ccc;
+    background: #848587;
 }
 .digipay-old-info-collection-card-buy-btn-ptag.buy-btn-ptag02 {
     background: #ff8600;
@@ -534,15 +534,15 @@ footer {
     border: 1px solid #fff;
     font-family: 'SolaimanLipi';
     color: #fff;
-    border-radius: 30px;
+    border-radius: 12px !important;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
 .welcome-slider-dgplay-btn:hover {
-    background: #0081be;
-    transform: scale(1.02);
+    background: #fff;
+    color: #0081be !important;
 }
 .bgcolor{
     background-color: #1d8ccd !important;
@@ -578,10 +578,20 @@ body:not(.side-header) .slider-parallax .slider-parallax-inner {
 }
 .button.button-small {
     padding: 0 17px;
-    font-size: 16px;
+    font-size: 12px;
     height: 34px;
     line-height: 38px;
+    border-radius: 10px !important;
+    background: transparent !important;
+    border: 1px solid #fff;
+    color: #fff !important;
+    font-weight: 600;
 }
+.button.button-small:hover {
+    background: #fff !important;
+    color: #0081be !important;
+}
+
 #primary-menu ul li > a {
     font-weight: 400;
     font-size: 18px;
@@ -615,8 +625,12 @@ body:not(.side-header) .slider-parallax .slider-parallax-inner {
 .btn-contact {
     background: transparent;
     border: 1px solid #fff;
-    color: #fff;
+    color: #fff !important;
     border-radius: 12px !important;
+}
+.btn-contact:hover {
+    background: #fff !important;
+    color: #0081be !important;
 }
 
 .play-video i {
