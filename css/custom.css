@@ -538,6 +538,11 @@ footer {
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.welcome-slider-dgplay-btn:hover {
+    background: #0081be;
+    transform: scale(1.02);
 }
 .bgcolor{
     background-color: #1d8ccd !important;
