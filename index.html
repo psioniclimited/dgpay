@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="css/combine.css" type="text/css" />
+    <link rel="stylesheet" href="css/movers.css" type="text/css" />
 
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
 
@@ -27,42 +28,50 @@
 
     <!-- Header
     ============================================= -->
-    <header id="header" class="transparent-header dark">
+    <header id="header" class="sticky-style-2 dark">
+        <div class="container clearfix">
 
+            <div id="logo" class="one-page-menu" data-easing="easeInOutExpo" data-speed="1500">
+                <a href="index.html" class="standard-logo" data-dark-logo="img/digipay-logo02.png"><img class="divcenter" src="img/digipay-logo02.png" alt="Canvas Logo"></a>
+                <a href="index.html" class="retina-logo" data-dark-logo="img/digipay-logo02.png"><img class="divcenter" src="img/digipay-logo02.png" alt="Canvas Logo"></a>
+            </div>
+            <ul class="header-extras">
+                <li>
+                    <i class="i-plain icon-call nomargin"></i>
+                    <div class="he-text t400 text-white-50">
+                        যোগাযোগ করুন:
+                        <span><a href="tel:+111 22-33-44" class="text-white t500">০১৭১৭ ৯২২৮৯০</a></span>
+                    </div>
+                </li>
+                <li>
+                    <i class="i-plain icon-line2-envelope nomargin"></i>
+                    <div class="he-text t400 text-white-50">
+                        ই - মেইল করুন:
+                        <span><a href="#" class="text-white t500 header-email">info@psionic.io</a></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <div id="header-wrap">
 
-            <div class="container header-container clearfix">
-
-                <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
-                <!-- Logo
-                ============================================= -->
-                <div id="logo">
-                    <a href="index.html" class="standard-logo" data-dark-logo="img/digipay-logo02.png"><img src="img/digipay-logo02.png" alt="Canvas Logo"></a>
-                    <a href="index.html" class="retina-logo" data-dark-logo="img/digipay-logo02.png"><img src="img/digipay-logo02.png" alt="Canvas Logo"></a>
-                </div><!-- #logo end -->
-
-                <!-- Primary Navigation
-                ============================================= -->
-                <nav id="primary-menu">
-
+            <nav id="primary-menu" class="style-2 with-arrows  not-dark">
+                <div class="container clearfix">
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
                     <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1500">
-                        <li><a data-href="#digipay-pricing-section"><div><img class="digiplay-nav-img" src="img/nav00.png" alt="map tracking"></div></a></li>
-                        <li><a data-href="#digipay-map-tracking-section"><div><img class="digiplay-nav-img" src="img/nav01.png" alt="map tracking"></div></a></li>
-                        <li><a data-href="#digipay-report-section"><div><img class="digiplay-nav-img" src="img/nav02.png" alt="report"></div></a></li>
-                        <li ><a data-href="#digipay-web-base-app-section"><div><img class="digiplay-nav-img" src="img/nav03.png" alt="web base"></div></a></li>
-                        <li ><a data-href="#digipay-daily-and-monthly-expense-section"><div><img class="digiplay-nav-img" src="img/nav04.png" alt="daily-monthly-expense"></div></a></li>
-                        <li ><a data-href="#digipay-complaint-tracking-section"><div><img class="digiplay-nav-img" src="img/nav05.png" alt="complaint-tracking"></div></a></li>
-                        <li><a data-href="#digipay-old-info-collection-section"><div><img class="digiplay-nav-img" src="img/nav06.png" alt="old-info"></div></a></li>
+                        <li class="current"><a href="#"  data-href="#digipay-pricing-section"><div>মূল্য তালিকা</div></a></li>
+                        <li><a href="#"  data-href="#digipay-map-tracking-section"><div>ম্যাপ ট্র্যাকিং</div></a></li>
+                        <li><a href="#"  data-href="#digipay-report-section"><div>রিপোর্ট</div></a></li>
+                        <li><a href="#"  data-href="#content.first-content"><div>ফিচারস্</div></a></li>
                     </ul>
 
-                </nav><!-- #primary-menu end -->
-
-            </div>
-
+                    <div class="header-buttons d-none d-sm-inline-block">
+                        <a href="#slider" data-scrollto="#slider" data-offset="-80" class="button button-rounded button-white button-light button-small m-0">ব্যবহার করুন</a>
+                    </div>
+                </div>
+            </nav>
         </div>
-
-    </header><!-- #header end -->
+    </header>
+    <!-- #header end -->
 
     <section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix">
 
@@ -82,7 +91,7 @@
                                         </h1>
                                         <div class="generic-header-bottom-line welcome-slider-dgplay-bottom-line"></div>
                                         <p class="digipay-web-base-app-paragraph">
-                                            ইহা একটি নিরাপদ ও ঝামেলা বিহীন বিল <br class="slider-break"> কালেকশন করার সহজ পদ্ধতি।
+                                            একটি নিরাপদ ও ঝামেলা বিহীন বিল কালেকশন<br class="slider-break">  এবং কেবল ব্যবসা পরিচালনা করার সহজ সমাধান।
                                         </p>
                                         <a href="#"><div class="welcome-slider-dgplay-btn">ব্যবহার করুন</div></a>
                                     </div>
@@ -115,20 +124,25 @@
                                 <!--সাধারণ-->
                                 <img src="img/old-info-general.png" alt="general">
                             </h1>
-                            <div class="digipay-old-info-collection-card-circle circle01"></div>
+                            <div class="digipay-old-info-collection-card-circle circle01">
+                                <img src="img/general-car.png" alt="car">
+                            </div>
                             <div class="digipay-old-info-collection-card-ptag-holder">
-                                <p class="digipay-old-info-collection-card-paragraph">৫০০ জন </p>
+                                <p class="digipay-old-info-collection-card-paragraph">০ - ১,০০০ <br>
+                                    গ্রাহক</p>
                             </div>
                             <div class="digipay-old-info-collection-card-list-holder">
-                                <ul class="digipay-old-info-collection-card-ul ul-01" style="list-style-image: url('img/list-style-gray.png');">
-                                    <li class="digipay-old-info-collection-card-li">প্যাকেজ সংক্রানত তথ্য</li>
-                                    <li class="digipay-old-info-collection-card-li">প্যাকেজ সংক্রানত তথ্য</li>
-                                    <li class="digipay-old-info-collection-card-li">প্যাকেজ সংক্রানত তথ্য</li>
-                                    <li class="digipay-old-info-collection-card-li">প্যাকেজ সংক্রানত তথ্য</li>
+                                <ul class="digipay-old-info-collection-card-ul ul-01" style="list-style: none;">
+                                    <li class="digipay-old-info-collection-card-li">- গ্রাহক তৈরী ও পরিচালনা -</li>
+                                    <li class="digipay-old-info-collection-card-li">- কালেকশন রিপোর্ট -</li>
+                                    <li class="digipay-old-info-collection-card-li">- বকেয়া রিপোর্ট -</li>
+                                    <li class="digipay-old-info-collection-card-li"> - কালেকটর ভিত্তিক -</li>
+                                    <li class="digipay-old-info-collection-card-li">- খরচের হিসাব -</li>
+                                    <li class="digipay-old-info-collection-card-li">- অভিযোগ রিপোর্ট -</li>
                                 </ul>
                             </div>
                             <div class="digipay-old-info-collection-card-ptag-holder">
-                                <p class="digipay-old-info-collection-card-paragraph">৳ ২,৫০০</p>
+                                <p class="digipay-old-info-collection-card-paragraph">মাসিক ৳ ১,৯৯৯</p>
                             </div>
                             <div class="digipay-old-info-collection-card-buy-btn-holder">
                                 <p class="digipay-old-info-collection-card-buy-btn-ptag buy-btn-ptag01">কিনে ফেলুন</p>
@@ -141,20 +155,25 @@
                                 <!--অসাধারণ-->
                                 <img src="img/old-info-extraoridinary.png" alt="extraordinary">
                             </h1>
-                            <div class="digipay-old-info-collection-card-circle circle02"></div>
+                            <div class="digipay-old-info-collection-card-circle circle02">
+                                <img src="img/extraordinary-bus.png" alt="bus">
+                            </div>
                             <div class="digipay-old-info-collection-card-ptag-holder">
-                                <p class="digipay-old-info-collection-card-paragraph">( ৫০০-৩,০০০ ) জন</p>
+                                <p class="digipay-old-info-collection-card-paragraph">১,০০০ - ২,০০০ <br>
+                                    গ্রাহক</p>
                             </div>
                             <div class="digipay-old-info-collection-card-list-holder">
-                                <ul class="digipay-old-info-collection-card-ul ul-02" style="list-style-image: url('img/list-style-orange.png');">
-                                    <li class="digipay-old-info-collection-card-li">প্যাকেজ সংক্রানত তথ্য</li>
-                                    <li class="digipay-old-info-collection-card-li">প্যাকেজ সংক্রানত তথ্য</li>
-                                    <li class="digipay-old-info-collection-card-li">প্যাকেজ সংক্রানত তথ্য</li>
-                                    <li class="digipay-old-info-collection-card-li">প্যাকেজ সংক্রানত তথ্য</li>
+                                <ul class="digipay-old-info-collection-card-ul ul-02" style="list-style: none;">
+                                    <li class="digipay-old-info-collection-card-li">- গ্রাহক তৈরী ও পরিচালনা -</li>
+                                    <li class="digipay-old-info-collection-card-li">- কালেকশন রিপোর্ট -</li>
+                                    <li class="digipay-old-info-collection-card-li">- বকেয়া রিপোর্ট -</li>
+                                    <li class="digipay-old-info-collection-card-li"> - কালেকটর ভিত্তিক -</li>
+                                    <li class="digipay-old-info-collection-card-li">- খরচের হিসাব -</li>
+                                    <li class="digipay-old-info-collection-card-li">- অভিযোগ রিপোর্ট -</li>
                                 </ul>
                             </div>
                             <div class="digipay-old-info-collection-card-ptag-holder">
-                                <p class="digipay-old-info-collection-card-paragraph">৳ ৩,০০০</p>
+                                <p class="digipay-old-info-collection-card-paragraph">মাসিক ৳ ২,৪৯৯</p>
                             </div>
                             <div class="digipay-old-info-collection-card-buy-btn-holder">
                                 <p class="digipay-old-info-collection-card-buy-btn-ptag buy-btn-ptag02">কিনে ফেলুন</p>
@@ -167,20 +186,25 @@
                                 <!--চমৎকার-->
                                 <img src="img/old-info-excellent.png" alt="excellent">
                             </h1>
-                            <div class="digipay-old-info-collection-card-circle circle03"></div>
+                            <div class="digipay-old-info-collection-card-circle circle03">
+                                <img src="img/excellent-train.png" alt="train">
+                            </div>
                             <div class="digipay-old-info-collection-card-ptag-holder">
-                                <p class="digipay-old-info-collection-card-paragraph">৩,০০০+ জন</p>
+                                <p class="digipay-old-info-collection-card-paragraph">৩,০০০+ <br>
+                                    গ্রাহক</p>
                             </div>
                             <div class="digipay-old-info-collection-card-list-holder">
-                                <ul class="digipay-old-info-collection-card-ul ul-03" style="list-style-image: url('img/list-style-blue.png');">
-                                    <li class="digipay-old-info-collection-card-li">প্যাকেজ সংক্রানত তথ্য</li>
-                                    <li class="digipay-old-info-collection-card-li">প্যাকেজ সংক্রানত তথ্য</li>
-                                    <li class="digipay-old-info-collection-card-li">প্যাকেজ সংক্রানত তথ্য</li>
-                                    <li class="digipay-old-info-collection-card-li">প্যাকেজ সংক্রানত তথ্য</li>
+                                <ul class="digipay-old-info-collection-card-ul ul-03" style="list-style: none;">
+                                    <li class="digipay-old-info-collection-card-li">- গ্রাহক তৈরী ও পরিচালনা -</li>
+                                    <li class="digipay-old-info-collection-card-li">- কালেকশন রিপোর্ট -</li>
+                                    <li class="digipay-old-info-collection-card-li">- বকেয়া রিপোর্ট -</li>
+                                    <li class="digipay-old-info-collection-card-li"> - কালেকটর ভিত্তিক -</li>
+                                    <li class="digipay-old-info-collection-card-li">- খরচের হিসাব -</li>
+                                    <li class="digipay-old-info-collection-card-li">- অভিযোগ রিপোর্ট -</li>
                                 </ul>
                             </div>
                             <div class="digipay-old-info-collection-card-ptag-holder">
-                                <p class="digipay-old-info-collection-card-paragraph">৳ ৩,০০০ + ( ১ x প্রতিজন )</p>
+                                <p class="digipay-old-info-collection-card-paragraph">মাসিক ৳ ২,৯৯৯</p>
                             </div>
                             <div class="digipay-old-info-collection-card-buy-btn-holder">
                                 <p class="digipay-old-info-collection-card-buy-btn-ptag buy-btn-ptag03">কিনে ফেলুন</p>
@@ -206,9 +230,8 @@
                             <div class="generic-header-bottom-line"></div>
 
                             <p class="digipay-web-base-app-paragraph">
-                                ডিজিপে ব্যবহার করে আপনি খুব সহজেই বিল কালেকশন করার পজিশন এবং যাবতীয় তথ্যের লাইভ রিপোর্ট সহ আপনার ব্যবসায়ের পারফরমেন্স
-                                রিপোর্ট পেয়ে যান নিমিেষই।  আমাদের এ্যাপটি আপনার ব্যবসা চালানোর খরচ কমিয়ে ফেলবে বহুগুনে এবং জীবনকে করে তুলবে অনেক সহজ।
-                                ডিজিপে একটি সম্পূর্ণ বাংলাদেশী সফটওয়্যার যা বানানো হয়েছে বাংলাদেশী কোম্পানীদের সমস্যা মাথায় নিয়ে।
+                                ডিজিপে ব্যবহার করে আপনি খুব সহজেই বিল কালেকশন করার পজিশন এবং যাবতীয় তথ্যের লাইভ রিপোর্ট সহ আপনার
+                                ব্যবসায়ের পারফরমেন্স রিপোর্ট পেয়ে যান নিমিেষই।  ডিজিপে একটি সম্পূর্ণ বংলােদশী সফটওয়্যার যা বানানো হয়েছে বাংলাদেশী কোম্পানীদের সমস্যা মাথায় নিয়ে।
                             </p>
                         </div>
                     </div>
@@ -249,21 +272,9 @@
                                 <img src="img/report02.png" alt="web-base">
                             </h1>
                             <div class="generic-header-bottom-line"></div>
-                            <ul class="digipay-report-card-ul" style="list-style-image: url('img/list-style-orange.png');">
-                                <li class="digipay-report-card-li">দৈিনক / মাসিক রিপোর্ট</li>
-                                <li class="digipay-report-card-li">বকেয়া পরিশোধ</li>
-                                <li class="digipay-report-card-li">লাইভ ডাটা এন্ট্রি</li>
-                            </ul>
-                            <div class="digipay-report-card-div" style="display: none">
-                                <p class="digipay-report-card-ptag">দৈ
-                                    িনক / মাসিক রিপোর্ট
-                                    <br>
-                                    বকেয়া পরিশোধ
-                                    <br>
-                                    লাইভ ডাটা এন্ট্রি
-                                    <br>
-                                </p>
-                            </div>
+                            <p class="digipay-web-base-app-paragraph">
+                                মাত্র একটি ক্লিকেই পেয়ে যাবেন আপনার <br class="hide-it"> কেবল ব্যবসার দৈনিক বা মাসিক রিপোর্ট।
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -276,6 +287,29 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content" class="first-content" style="margin-bottom: 0px;">
+        <div class="content-wrap pb-0">
+            <div class="section p-0 dark mb-0" style="background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('img/1.jpg') no-repeat center center / cover; min-height: 401px">
+                <div class="container">
+                    <div class="row justify-content-between mb-4" style="padding: 100px 0 160px;">
+                        <div class="col-lg-5 col-md-6 offset-lg-1 pt-3">
+                            <a href="https://www.youtube.com/watch?v=JWeCmRPJjUo" data-lightbox="iframe" class="play-video ml-3"><i class="icon-play"></i></a>
+
+                        </div>
+                        <div class="col-lg-5 col-md-6 mb-0 mb-md-5">
+                            <h3 class="mb-2 text-white">
+                                <img src="img/video-text.png" alt="video text">
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <svg class="svg-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1463 188.03">
+                    <path style="fill:#FFF;" d="M-.5,288.5s297-175,792-97,599,52,671,25v143H-.5Z" transform="translate(0 -171.47)"></path></svg>
             </div>
         </div>
     </section>
@@ -293,8 +327,8 @@
                             </h1>
                             <div class="generic-header-bottom-line"></div>
                             <p class="digipay-web-base-app-paragraph">
-                                ডিজিপে সম্পূর্ণ ওয়েব ভিত্তিক এ্যাপ হওয়ার করণে আলাদা ইনস্টলেশনের কোন ঝামেলা নেই।  আপনি কম্পিউটার বা
-                                মোবাইলের ব্রাউজার দিয়ে খুব সহজেই ডিজিেপ এর ড্যাসবোর্ডে গিয়ে মনিটরিং করতে পারবেন।  এর জন্য আপনার আলাদা কোন সফটওয়্যার বা এ্যাপ ইনস্টল করার প্রয়োজন হবে না।
+                                ডিজিপে সম্পূর্ণ ওয়েব ভিত্তিক এ্যাপ হওয়ার করণে আলাদা ইনস্টলেশনের কোন ঝামেলা নেই।
+                                আপনি কম্পিউটার বা মোবাইলের ব্রাউজার দিয়ে খুব সহজেই ডিজিেপ এর ড্যাসবোর্ডে গিয়ে মনিটরিং করতে পারবেন।
                             </p>
                         </div>
                     </div>
@@ -326,7 +360,7 @@
                             <div class="digipay-daily-and-monthly-expense-content-text fadeInRight animated" data-animate="fadeInRight">
                                 <p class="digipay-daily-and-monthly-expense-content-text-paragraph">
                                     বিভিন্ন খাতে খরচের হিসাব রাখা বেশ কষ্টসাধ্য ব্যাপার।  অনেক সময় সব খরচের হিসাব রাখা সম্ভব হয়ে উঠে না।
-                                    কিন্তু ডিজিপেতে সকল খরচের হিসাব এবং মনিটরিং করার সুবিধা রয়েছে।  এর জন্য আপনাকে সবসময় অফিসে বসে থাকার প্রয়োজন হবে না।
+                                    কিন্তু ডিজিপে তে সকল খরচের হিসাব এবং মনিটরিং করার সুবিধা রয়েছে।  এর জন্য আপনাকে সবসময় অফিসে বসে থাকার প্রয়োজন হবে না।
                                 </p>
                             </div>
                         </div>
@@ -349,9 +383,7 @@
                             </h1>
                             <div class="generic-header-bottom-line"></div>
                             <p class="digipay-web-base-app-paragraph">
-                                ডিজিপে দিয়ে আপনি খুব সহজেই  সেবা সংক্রান্ত বিভিন্ন অভিযোগ ট্র্যাকিং করতে পারবেন।
-                                সবচাইতে জরুরী অভিযোগগুলো আপনি কালার অনুযায়ী চিহ্নিত করে রাখতে পারবেন এবং সহজেই
-                                তাৎক্ষণিক ব্যবস্থা নিতে পারবেন।  এতে আপনার আলাদাভাবে মনে রাখার প্রয়োজন হবে না।
+                                ডিজিপে দিয়ে আপনি খুব সহজেই  সেবা সংক্রান্ত বিভিন্ন অভিযোগ ট্র্যাকিং করতে পারবেন এবং সহজেই তাৎক্ষণিক ব্যবস্থা নিতে পারবেন।
                             </p>
                         </div>
                     </div>
@@ -378,9 +410,7 @@
                             </h1>
                             <div class="generic-header-bottom-line"></div>
                             <p class="digipay-web-base-app-paragraph">
-                                আপনি হয়তো ভাবতে পারেন যে এতদিন যেভবে কাজ করে আসছিলাম সেগুলোর কি হবে?
-                                আমার এত এত এক্সেল শীট গুলোর কি হবে? কোন চিন্তা নেই।  আমরা আপনার সারা জীবনের
-                                সকল এক্সেল শীট গুলো ডিজিপেতে সংগ্রহ করে দিব।  এতে আপনি আপনার সারা জীবনের সকল তথ্য সাল ও মাস অনুযায়ী এক জায়গায় খুঁজে পাবেন।
+                                আপনার চলতি গ্রাহক ডাটা আমরা অতি সহজে এক্সেল ফরম্যাট থেকে এন্ট্রি করে দিব।  বিস্তারিত জানতে আমাদের সাথে যোগাযোগ করুন।
                             </p>
                         </div>
                     </div>
@@ -396,23 +426,50 @@
 
     </section>
 
-    <footer id="digipay-footer-section">
-        <div class="container digipay-footer-container">
-            <div class="row digipay-footer-row">
-                <div class="col-md-3 digipay-footer-col03">
+    <section id="content" style="margin-bottom: 0px;">
+        <div class="content-wrap pb-0">
+            <div class="section dark pt-0 mb-0 bgcolor" style="background: url('img/2.png') no-repeat center bottom / 100%; overflow: visible">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1960 206.8" class="bg-white">
+                    <path class="svg-themecolor" style="opacity:0.2;" d="M0,142.8A2337.49,2337.49,0,0,1,297.5,56.3C569.33-3.53,783.89.22,849.5,2.3c215.78,6.86,382.12,45.39,503.25,73.45,158.87,36.8,283.09,79.13,458.75,54.55A816.49,816.49,0,0,0,1983,86.8v110H0Z"></path>
+                    <path class="svg-themecolor" d="M.5,152.8s498-177,849-150,1031,238,1134,94v110H.5Z"></path>
+                </svg>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center center my-4">
+                        <div class="col-sm-8">
+                            <div class="heading-block nobottomborder mb-4">
+                                <h2 class="t600 ls0 nott mb-3" style="font-size: 44px; line-height: 1.3">
+                                    <img src="img/contact-us.png" alt="contact us">
+                                </h2>
 
-                </div>
-                <div class="col-md-6 digipay-footer-col06">
-                    <div class="digipay-footer-hotline-digit-div">
-                        <a href="http://psionic.io/" class="powerby" ><small id="palace-power-by" style="font-family: 'Poppins';">Powered By :</small>&nbsp;<small id="power-by-company-name-in-footer" style="font-family: 'Poppins'; ">Psionic Interactive Limited.</small></a>
+                            </div>
+                            <a href="#" class="button button-white button-light button-rounded t500 m-0 btn-contact">কল করুন</a>
+                            <div class="digipay-footer-hotline-digit-div">
+                                <a href="http://psionic.io/" class="powerby" ><small id="palace-power-by" style="font-family: 'Poppins';">Powered By : </small>&nbsp;<small id="power-by-company-name-in-footer" style="font-family: 'Poppins'; ">psionic.io</small></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 digipay-footer-col03">
-
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+
+    <!--<footer id="digipay-footer-section">-->
+        <!--<div class="container digipay-footer-container">-->
+            <!--<div class="row digipay-footer-row">-->
+                <!--<div class="col-md-3 digipay-footer-col03">-->
+
+                <!--</div>-->
+                <!--<div class="col-md-6 digipay-footer-col06">-->
+                    <!--<div class="digipay-footer-hotline-digit-div">-->
+                        <!--<a href="http://psionic.io/" class="powerby" ><small id="palace-power-by" style="font-family: 'Poppins';">Powered By :</small>&nbsp;<small id="power-by-company-name-in-footer" style="font-family: 'Poppins'; ">Psionic Interactive Limited.</small></a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-3 digipay-footer-col03">-->
+
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</footer>-->
 
 </div><!-- #wrapper end -->
 
@@ -422,13 +479,13 @@
 
 <!-- External JavaScripts
     ============================================= -->
-<!--<script src="js/modernizr.custom.97074.js"></script>-->
+<script src="js/modernizr.custom.97074.js"></script>
 
 <!-- Footer Scripts
     ============================================= -->
-<!--<script src="js/javascript-combine.js"></script>-->
+<script src="js/javascript-combine.js"></script>
 
-<!--<script src="js/custom.js"></script>-->
+<script src="js/custom.js"></script>
 
 
 </body>

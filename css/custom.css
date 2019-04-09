@@ -7,10 +7,10 @@
     font-style: normal;
 }
 /*@font-face {*/
-    /*font-family: 'Hind_Siliguri_Bold';*/
-    /*src: url('Hind_Siliguri_Bold.ttf') format('woff2');*/
-    /*font-weight: bold;*/
-    /*font-style: normal;*/
+/*font-family: 'Hind_Siliguri_Bold';*/
+/*src: url('Hind_Siliguri_Bold.ttf') format('woff2');*/
+/*font-weight: bold;*/
+/*font-style: normal;*/
 /*}*/
 
 html {
@@ -19,12 +19,12 @@ html {
 body {
     font-family: 'Montserrat';
 }
-body:not(.no-transition) #wrapper, .animsition-overlay {
-    position: relative;
-    opacity: 1;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
+/*body:not(.no-transition) #wrapper, .animsition-overlay {*/
+/*position: relative;*/
+/*opacity: 1;*/
+/*-webkit-animation-fill-mode: both;*/
+/*animation-fill-mode: both;*/
+/*}*/
 h1, h2, h3, h4, h5, h6, h7 {
     font-family: 'Hind_Siliguri_Bold';
 }
@@ -107,8 +107,9 @@ p, span, div {
 }
 .digipay-old-info-collection-card {
     position: relative;
-    padding: 60px 20px 20px 20px;
-    width: 280px;
+    padding: 60px 0px 20px 0px;
+    /*width: 280px;*/
+    width: 100%;
     left: 50%;
     border: 0.5px solid rgba(0,0,0, 0.05);
     border-radius: 30px;
@@ -126,9 +127,9 @@ p, span, div {
     z-index: 1;
 }
 .digipay-old-info-collection-card-col04:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
     z-index: 2;
 }
 .digipay-old-info-collection-card01 {
@@ -141,41 +142,29 @@ p, span, div {
     box-shadow: 0px 10px 40px rgba(0, 129, 190, 0.25);
 }
 .digipay-old-info-collection-card-header {
-    text-align: center;
-    font-size: 28px;
-}
+     text-align: center;
+     font-size: 28px;
+ }
+
 .digipay-old-info-collection-card-row {
     position: relative;
-    width: calc(100% - 0%);
+    /*width: calc(100% - 0%);*/
 }
 .digipay-old-info-collection-card-col04 {
     /*padding-left: 0;*/
 }
 .digipay-old-info-collection-card-circle {
     position: relative;
-    width: 40px;
-    height: 40px;
     margin-bottom: 25px;
-    border-radius: 90%;
     top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    transform: translateX(-50%);
+    left: 0;
+    text-align: center;
 }
-.digipay-old-info-collection-card-circle.circle01 {
-    background: #ccc;
-}
-.digipay-old-info-collection-card-circle.circle02 {
-    background: #ff8600;
-}
-.digipay-old-info-collection-card-circle.circle03 {
-    background: #0081be;
-}
+
 .digipay-old-info-collection-card-paragraph {
     position: relative;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 38px;
     text-align: center;
     padding-right: 5px;
     margin-top: 15px;
@@ -183,15 +172,15 @@ p, span, div {
 }
 .digipay-old-info-collection-card-li {
     position: relative;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 35px;
-    text-align: justify;
-    padding-right: 7px;
+    text-align: center;
+    padding-right: 0px;
 }
 
 .digipay-old-info-collection-card-list-holder {
     position: relative;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 .digipay-old-info-collection-card-buy-btn-holder {
     position: relative;
@@ -321,9 +310,9 @@ p, span, div {
     width: -moz-fit-content;
     top: 0;
     left: 0;
-    -webkit-transform: translate(267px, -40%);
-    -moz-transform: translate(267px, -40%);
-    transform: translate(267px, -40%);
+    -webkit-transform: translate(267px, -33%);
+    -moz-transform: translate(267px, -33%);
+    transform: translate(267px, -33%);
 }
 
 #digipay-web-base-app-section {
@@ -459,7 +448,8 @@ footer {
     position: relative;
     width: 100%;
     text-align: center;
-    /* padding: 15px 0px 5px; */
+    top: 60px;
+    margin-bottom: 10px;
 }
 #palace-power-by, #power-by-company-name-in-footer {
     font-size: 14px;
@@ -542,12 +532,90 @@ footer {
     padding: 1.5rem;
     padding-bottom: 1rem;
     border: 1px solid #fff;
-   font-family: 'SolaimanLipi';
+    font-family: 'SolaimanLipi';
     color: #fff;
     border-radius: 30px;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
+}
+.bgcolor{
+    background-color: #1d8ccd !important;
+}
+.bgcolor #header-wrap {
+    background-color: transparent !important;
+}
+#header:not(:hover) #header-wrap, #header:hover #header-wrap, #header:not(:hover) {
+    background-color: transparent !important;
+    border-bottom-color: rgba(255,255,255,.1);
+}
+#header.dark.sticky-header.transparent-header #header-wrap:not(.not-dark) {
+    background-color: #1d8ccd !important;
+}
+.svg-themecolor {
+    fill: #1d8ccd;
+}
+#header:not(:hover), #header.dark:not(.transparent-header), #header:not(:hover) #header-wrap, #header.dark.sticky-header:not(.transparent-header) #header-wrap:not(.not-dark) {
+    background-color: transparent !important;
+    border-bottom-color: rgba(255,255,255,.1);
+    z-index: 1250;
+    overflow: hidden;
+}
+#header.dark.sticky-header:not(.transparent-header) #header-wrap:not(.not-dark) {
+    background-color: #1d8ccd !important;
+    border-bottom-color: rgba(255,255,255,.1);
+    z-index: 1250;
+    overflow: hidden;
+}
+body:not(.side-header) .slider-parallax .slider-parallax-inner {
+    left: 0;
+    top: 0;
+}
+.button.button-small {
+    padding: 0 17px;
+    font-size: 16px;
+    height: 34px;
+    line-height: 38px;
+}
+#primary-menu ul li > a {
+    font-weight: 400;
+    font-size: 18px;
+}
+.dark .button-light:not(.button-border):hover {
+    background-color: #0081be;
+}
+.header-email {
+    font-family: 'Montserrat' !important;
+    font-size: 12px;
+}
+.content-wrap.pb-0 {
+    padding-top: 0;
+}
+.section.p-0.dark.mb-0 {
+    min-height: 700px !important;
+}
+.row.justify-content-between.mb-4 {
+    padding: 150px 0 !important;
+    margin: auto;
+}
+.col-lg-5.col-md-6.offset-lg-1.pt-3 {
+      margin: auto;
+  }
+.col-lg-5.col-md-6.mb-0.mb-md-5 {
+    margin: auto;
+}
+.t600.ls0.nott.mb-3 {
+    margin-bottom: 30px !important;
+}
+.btn-contact {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 12px !important;
+}
+
+.play-video i {
+    color: #0280bc;
 }
 @media (min-width: 1921px){
     #primary-menu {
@@ -565,6 +633,9 @@ footer {
         -webkit-transform: translate(calc(100% - 50%), -25%);
         -moz-transform: translate(calc(100% - 50%), -25%);
         transform: translate(calc(100% - 50%), -25%);
+    }
+    .section.p-0.dark.mb-0 {
+        min-height: 1000px !important;
     }
 }
 
@@ -614,6 +685,10 @@ footer {
         -webkit-transform: translate(0, -40%)  scale(0.8);
         -moz-transform: translate(0, -40%) scale(0.8);
         transform: translate(0, -40%) scale(0.8);
+    }
+    .row.justify-content-between.mb-4 {
+        padding: 200px 0 !important;
+        margin: auto;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -679,6 +754,10 @@ footer {
         -webkit-transform: translateY(-95%);
         -moz-transform: translateY(-95%);
     }
+    .row.justify-content-between.mb-4 {
+        padding: 200px 0 !important;
+        margin: auto;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     #header.dark.transparent-header, #header.dark.semi-transparent {
@@ -737,9 +816,9 @@ footer {
         left: calc(100% - 87%);
     }
     .digipay-report-img {
-        -webkit-transform: translate(0, -40%)  scale(1);
-        -moz-transform: translate(0, -40%) scale(1);
-        transform: translate(0, -40%) scale(1);
+        -webkit-transform: translate(0, -25%)  scale(1);
+        -moz-transform: translate(0, -25%) scale(1);
+        transform: translate(0, -25%) scale(1);
     }
     .digipay-daily-and-monthly-expense-content-text-paragraph {
         width: 245px;
@@ -759,9 +838,9 @@ footer {
         padding: 50px 30px 50px 30px;
     }
     .digipay-old-info-collection-card-col04 {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 80px;
+        /*flex: 0 0 100%;*/
+        /*max-width: 100%;*/
+        /*margin-bottom: 80px;*/
     }
 
     .slider-break {
@@ -794,9 +873,23 @@ footer {
     .swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
         height: 700px !important;
     }
-    .digipay-web-base-app-col05 {
-        flex: 0 0 50.666667%;
-        max-width: 50.666667%;
+    /*.digipay-web-base-app-col05 {*/
+        /*flex: 0 0 50.666667%;*/
+        /*max-width: 50.666667%;*/
+    /*}*/
+    #header:not(:hover), #header.dark:not(.transparent-header), #header:not(:hover) #header-wrap, #header.dark.sticky-header:not(.transparent-header) #header-wrap:not(.not-dark) {
+        background-color: #1d8ccd !important;
+        border-bottom-color: rgba(255,255,255,.1);
+        z-index: 1250;
+        overflow: hidden;
+    }
+    #header-wrap .header-buttons {
+        right: 0px;
+        border-right: none;
+    }
+    .row.justify-content-between.mb-4 {
+        padding: 200px 0 !important;
+        margin: auto;
     }
 }
 @media (max-width: 767px) {
@@ -805,9 +898,9 @@ footer {
         height: 20px;
     }
     .digipay-report-img {
-         -webkit-transform: none;
+        -webkit-transform: none;
         -moz-transform: none;
-         transform: none;
+        transform: none;
     }
     .digipay-old-info-collection-card-row {
         position: relative;
@@ -815,11 +908,11 @@ footer {
         width: -moz-fit-content;
     }
     .digipay-old-info-collection-card-col04 {
-         padding-left: 15px;
+        padding-left: 15px;
         margin-bottom: 60px;
     }
     .digipay-old-info-collection-card {
-         width: 250px;
+        width: 250px;
     }
     .digipay-old-info-collection-card-li {
         line-height: 24px;
@@ -907,7 +1000,10 @@ footer {
         -moz-transform: translateX(-50%);
     }
     .digipay-web-base-app-content-wrap {
-        /*padding-top: 0;*/
+        margin-top: 80px;
+    }
+    #digipay-complaint-tracking-section .content-wrap {
+        padding-top: 0;
     }
     .digipay-web-base-app-header-main img {
         position: relative;
@@ -988,7 +1084,7 @@ footer {
         height: 100vh !important;
     }
     .d-none {
-         display: inherit !important;
+        display: inherit !important;
     }
     .slider-break {
         display: none;
@@ -999,9 +1095,9 @@ footer {
         width: 50px;
         margin-top: 20px;
         background: #ff8500;
-         left:0%;
-         transform: translateX(0%);
-         -webkit-transform: translateX(0%);
+        left:0%;
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
         -moz-transform: translateX(0%);
     }
     .welcome-slider-dgplay-btn {
@@ -1015,5 +1111,27 @@ footer {
         transform: translateY(-75%);
         -webkit-transform: translateY(-75%);
         -moz-transform: translateY(-75%);
+    }
+    #header:not(:hover), #header.dark:not(.transparent-header), #header:not(:hover) #header-wrap, #header.dark.sticky-header:not(.transparent-header) #header-wrap:not(.not-dark) {
+        background-color: #1d8ccd !important;
+        border-bottom-color: rgba(255,255,255,.1);
+        z-index: 1250;
+        overflow: hidden;
+    }
+    #header-wrap .header-buttons {
+        right: 0px;
+        border-right: none;
+    }
+    .section.p-0.dark.mb-0 {
+        min-height: 600px !important;
+    }
+    .col-lg-5.col-md-6.offset-lg-1.pt-3 {
+        text-align: center;
+    }
+    .col-lg-5.col-md-6.mb-0.mb-md-5 {
+        margin-top: 60px;
+    }
+    .hide-it {
+        display: none;
     }
 }
