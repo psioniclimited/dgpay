@@ -18,6 +18,7 @@ html {
 }
 body {
     font-family: 'Montserrat';
+    background: #fff;
 }
 /*body:not(.no-transition) #wrapper, .animsition-overlay {*/
 /*position: relative;*/
@@ -36,6 +37,7 @@ p, span, div {
     color: #FFF;
     text-shadow: none;
 }
+
 #gotoTop:hover {
     background-color: #1d8ccd !important;
 }
@@ -544,6 +546,10 @@ footer {
     background: #fff;
     color: #0081be !important;
 }
+.bg-white {
+    top: 5px;
+}
+
 .bgcolor{
     background-color: #1d8ccd !important;
 }
@@ -723,7 +729,7 @@ body:not(.side-header) .slider-parallax .slider-parallax-inner {
         height: 100%;
     }
     .digipay-pricing-content-wrap {
-        padding-top: 160px;
+        padding-top: 0px;
         padding-bottom: 160px;
         top: 0%;
         transform: translateY(0%);
@@ -776,6 +782,24 @@ body:not(.side-header) .slider-parallax .slider-parallax-inner {
     .row.justify-content-between.mb-4 {
         padding: 200px 0 !important;
         margin: auto;
+    }
+    .swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
+        height: 130vh !important;
+        top: -170px;
+    }
+
+    .digipay-pricing-content {
+        position: relative;
+        padding-top: 160px;
+    }
+    .welcome-slider-container {
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+    }
+    .welcome-slider-content {
+        position: absolute;
+        top: -70px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -909,6 +933,14 @@ body:not(.side-header) .slider-parallax .slider-parallax-inner {
     .row.justify-content-between.mb-4 {
         padding: 200px 0 !important;
         margin: auto;
+    }
+    .swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
+        height: 100vh !important;
+        top: -0px;
+    }
+    .digipay-welcomeslider-col05 .digipay-web-base-app-content {
+        position: relative;
+        top: 70px;
     }
 }
 @media (max-width: 767px) {
