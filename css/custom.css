@@ -643,6 +643,28 @@ body:not(.side-header) .slider-parallax .slider-parallax-inner {
 .play-video i {
     color: #0280bc;
 }
+.owl-carousel .owl-nav [class*=owl-]:hover {
+    background-color: #0081be !important;
+    color: #FFF !important;
+    text-decoration: none;
+}
+.owl-carousel .owl-dots .owl-dot {
+    background-color: #0081be;
+}
+.testimonial {
+    height: 260px;
+}
+.testi-content {
+    position: relative;
+     border-left: transparent;
+}
+.testi-content p {
+    font-size: 14px;
+    line-height: 26px;
+}
+.testi-meta {
+    font-size: 18px;
+}
 @media (min-width: 1921px){
     #primary-menu {
         margin-right: -120px;
