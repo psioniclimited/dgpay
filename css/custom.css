@@ -783,14 +783,17 @@ body:not(.side-header) .slider-parallax .slider-parallax-inner {
         padding: 200px 0 !important;
         margin: auto;
     }
-    .swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
-        height: 130vh !important;
+    .swiper_wrapper:not(.force-full-screen) {
+        height: 900px !important;
         top: -170px;
     }
-
+    .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
+        height: 1070px !important;
+        top: -170px;
+    }
     .digipay-pricing-content {
         position: relative;
-        padding-top: 160px;
+        padding-top: 80px;
     }
     .welcome-slider-container {
         transform: scale(0.9);
@@ -800,6 +803,12 @@ body:not(.side-header) .slider-parallax .slider-parallax-inner {
     .welcome-slider-content {
         position: absolute;
         top: -70px;
+    }
+    .section.p-0.dark.mb-0 {
+        z-index: 2;
+    }
+    #digipay-report-section {
+        height: 800px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -941,6 +950,12 @@ body:not(.side-header) .slider-parallax .slider-parallax-inner {
     .digipay-welcomeslider-col05 .digipay-web-base-app-content {
         position: relative;
         top: 70px;
+    }
+    .section.p-0.dark.mb-0 {
+        z-index: 2;
+    }
+    .section.dark.pt-0.mb-0.bgcolor {
+        z-index: 325;
     }
 }
 @media (max-width: 767px) {
