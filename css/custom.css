@@ -667,9 +667,15 @@ body:not(.side-header) .slider-parallax .slider-parallax-inner {
 }
 .header-buttons-icon {
     margin-left: 10px;
+    transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
 }
 .header-buttons-icon img{
     width: 40px;
+}
+.header-buttons:hover .header-buttons-icon {
+    opacity: 0;
 }
 @media (min-width: 1921px){
     #primary-menu {
@@ -1232,5 +1238,8 @@ body:not(.side-header) .slider-parallax .slider-parallax-inner {
     .row.justify-content-between.mb-4 {
         padding: 0px 0 !important;
         margin: auto;
+    }
+    .header-buttons-icon {
+        display: none;
     }
 }
